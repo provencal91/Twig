@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Welcome, this is the Title{% endblock %}
+
+{% block content %}
+    <div class = 'container'>
+        <div class = "row">
+            {% for products in array  %}
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="" class="card-img-top" alt="" />
+                        <div class="card-body">
+                            <h5 class="card-title">{{ products }}</h5>
+                        </div>
+                    </div>
+                </div>
+            {%  endfor %}
+        </div>
+    </div>
+{% endblock %}
